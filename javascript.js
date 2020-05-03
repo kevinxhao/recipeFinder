@@ -10,6 +10,6 @@ xhttp.onreadystatechange = function() {
     }
 };
 
-xhttp.open("GET", "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken", true);
+xhttp.open("GET", "https://www.themealdb.com/api/json/v1/1/list.php?c=list", true);
 xhttp.send();
 

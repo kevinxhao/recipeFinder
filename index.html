@@ -25,10 +25,10 @@
 				<h1 id="title"> Recipe Planner </h1>
 			</div>
 			<!-- search bar -->
-			<div class="searchBar">
-				<input id="searchBar" type="text" placeholder="search recipes...">
+			<!-- <div class="searchBar">
+				<input id="searchBar" type="text" placeholder="search...">
 				<i class="fas fa-search" id="search-icon"></i>
-			</div>
+			</div> -->
 			<!-- buttons -->
 			<div class="head-buttons">
 				<i class="fas fa-bars" id="bars"></i>
@@ -68,24 +68,49 @@
 			<div class="searchFilters">	
 				<!-- catagory menu -->
 				<div class="dropdown">
-					<button onclick="dropMenu()" class="dropbtn">View Catagories...</button>
+					<button onclick="dropMenu()" class="dropBtn">View Catagories...</button>
 					<div id="catagoriesDropdown" class="dropdown-content">
-						<p>Home</p>
-						<p>Home</p>
-						<p>Home</p>
-						<p>Home</p>
+						<p onClick="showCategory('Beef')">Beef</p>
+						<p onClick="showCategory('Breakfast')">Breakfast</p>
+						<p onClick="showCategory('Chicken')">Chicken</p>
+						<p onClick="showCategory('Dessert')">Dessert</p>
+						<p onClick="showCategory('Goat')">Goat</p>
+						<p onClick="showCategory('Lamb')">Lamb</p>
+						<p onClick="showCategory('Miscellaneous')">Miscellaneous</p>
+						<p onClick="showCategory('Pasta')">Pasta</p>
+						<p onClick="showCategory('Pork')">Pork</p>
+						<p onClick="showCategory('Seafood')">Seafood</p>
+						<p onClick="showCategory('Side')">Side</p>
+						<p onClick="showCategory('Starter')">Starter</p>
+						<p onClick="showCategory('Vegan')">Vegan</p>
+						<p onClick="showCategory('Vegetarian')">Vegetarian</p>
 					</div>
 				</div>
 				<!-- search by name -->
 				<div class="searchBar">
-					<input id="searchBar" type="text" placeholder="search recipes...">
+					<form onSubmit="searchSubmit()"><input id="searchBar" type="text" placeholder="search recipes by name..."></form>
 					<i class="fas fa-search" id="search-icon"></i>
 				</div>
 				<!-- random button -->
-				<button class="dropbtn"> Or Get a RANDOM Recipe! </button>
-				
+				<button class="randomBtn" onClick="showRandom()"> Or Get a RANDOM Recipe! </button>
 			</div>
 			
+			<hr>
+			
+			<!-- displayed recipes -->
+			<div class="recipeList" id="recipeList">
+				<p class="emptyList" id="emptytList"> No recpies currently displayed, try searching using the options above. </p>
+				<!-- <div class="smlRecipe">
+					<img class="smlImg" src="pie.jpeg">
+					
+					<div class="smlText">
+						<p class="smlTitle"> recipe name </p>
+						<p class="smlIngredients"> This recipe has 8 ingredients</p>
+					</div>
+					<button class="smlBtn"> View Recipe </button>
+				</div> -->
+			</div>
+			<hr>
 			
 	<!-- todays top recipes -->
 			<!-- header -->
@@ -95,16 +120,16 @@
 			<!-- recipes -->
 			<div class="topRecipes">
 				<div class="favRecipe">
-					<img src="pie.jpeg" alt="logo" onclick="zoomIn(pie.jpeg)">
-					<p >Lemon Meringue Pie </p>
+					<img src="https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg" alt="Chilli Prawn Linguini" onclick="zoomIn(pie.jpeg)">
+					<p > Chilli Prawn Linguini </p>
 				</div>
 				<div class="favRecipe">
-					<img src="calamari.jpeg" alt="logo" onclick="zoomIn(calamari.jpeg)">
-					<p >Calamari </p>
+					<img src="https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" alt="Chicken Couscous" onclick="zoomIn(calamari.jpeg)">
+					<p >Chicken Couscous</p>
 				</div>
 				<div class="favRecipe">
-					<img src="roast.jpg" alt="logo" onclick="zoomIn(roast.jpg)">
-					<p >Texas Pot Roast </p>
+					<img src="https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg" alt="Venetian Duck Ragu" onclick="zoomIn(roast.jpg)">
+					<p > Venetian Duck Ragu </p>
 				</div>
 			</div>
 
@@ -156,6 +181,7 @@
     </script>
 	<script src="./DropDown.js"></script>
 	<script src="./javascript.js"></script>
+	<script src="./recipeList.js"></script>
 	</body>
 
 </html>

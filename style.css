@@ -30,6 +30,8 @@ body {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+  
+  border-bottom: 1px solid black;
 }
 
 .heading* {
@@ -58,7 +60,7 @@ body {
   position: absolute;
   left: 80px;
   top: -23px;
-  color: dark-green;
+  color: black;
 
   font-size: 50px;
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -67,7 +69,7 @@ body {
 .searchBar {
   margin-left: 20px;
   margin-right: 20px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   position: relative;
 }
@@ -98,7 +100,7 @@ body {
 
 #bars {
   float: right;
-  color: dark-green;
+  color: black;
   margin-right: 30px;
 }
 
@@ -116,7 +118,6 @@ body {
   height: 500px;
   position: relative;
   margin: auto;
-  border: 1px solid black;
   z-index: -2;
 }
 
@@ -130,7 +131,7 @@ body {
 
 .slideImg {
   width: 100%;
-  max-height: 500px;
+  height: 500px;
 }
 
 .prev, .next {
@@ -226,12 +227,11 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  height: 200px;
+  height: 50px;
   width: 100%;
   margin:0px;
-  border-top: 2px solid red;
-  border-bottom: 5px solid rgb(204, 0, 0);
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -240,7 +240,7 @@ body {
   display: inline-block;
 }
 
-.dropbtn {
+.dropBtn {
   background-color: green;
   color: white;
   padding: 16px;
@@ -249,8 +249,8 @@ body {
   cursor: pointer;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+.dropBtn:hover, .dropBtn:focus, .randomBtn:hover, .randomBtn:focus {
+  background-color: darkgreen;
 }
 
 .dropdown-content {
@@ -258,7 +258,7 @@ body {
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  max-height: 100px;
+  max-height: 300px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -275,6 +275,84 @@ body {
 
 .show {display: block;}
 
+.randomBtn {
+  background-color: green;
+  color: white;
+  height: 50px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* --------------------- displayed recipes -------------------------- */
+
+.recipeList {
+	text-align: center;
+}
+
+.emptyList{
+  margin-left: auto;
+}
+
+.smlRecipe {
+	width: 80%;
+	height: 120px;
+	margin: 20px;
+	margin-left: 10%;
+	border: 1px solid gray;
+	background-color: lightgray;
+}
+
+.smlImg {
+	position: relative;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+.smlText {
+  position: relative;
+  float: left;
+  height: 100px;
+  width: 60%;
+  top: 10px;
+  text-align: left;
+  background-color: white;
+}
+
+.smlTitle {
+  font-size: 25px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: 10px;
+}
+
+.smlIngredients {
+  font-size: 15px;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin: 20px;
+}
+
+.smlBtn {
+  float: right;
+  position: relative;
+  right: 20px;
+  top: 40px;
+  
+  height: 40px;
+  width: 120px;
+  
+  background-color: green;
+  color: white;
+  border: none;
+}
 
 
 /* ------------------Todays top recipes-------------------------------- */
@@ -282,7 +360,6 @@ body {
 .recipeHeader{
   position: relative;
   z-index: -2;
-  border: 1px solid black;
 }
 
 h2{
@@ -298,16 +375,15 @@ h2{
 .favRecipe{
   position: relative;
   float: left;
-  width: 30%;
+  width: 25%;
   z-index: -2;
   text-align: center;
-  border: 1px solid black;
 }
 
 .favRecipe img{
   position: relative;
   height: auto;
-  width: 90%;
+  width: 80%;
   z-index: -2;
 }
 
