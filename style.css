@@ -58,9 +58,9 @@ body {
   left: 80px;
   top: -23px;
   color: dark-green;
-  
+
   font-size: 50px;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .searchBar {
@@ -156,13 +156,13 @@ body {
 /* Caption text */
 .textbox {
   background-color: #EEEEEE;
-  
+
   position: absolute;
   top: 50px;
   left: 100px;
   height: 200px;
   width: 500px;
-  
+
   padding: 30px;
   padding-top: 0px;
   box-shadow: 5px 5px 10px 10px black;
@@ -172,7 +172,7 @@ body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 35px;
   color: dark-grey;
-  
+
   top:0px;
 }
 
@@ -287,14 +287,14 @@ h2 {
 #careerButton {
   height: 50px;
   width: 200px;
-  
+
   background-color: rgba(204, 0, 0, .3);
   border: 2px solid rgb(204, 0, 0);
   border-radius: 10px;
-  
+
   font-size: 20px;
 }
-	
+
 #investorsPic {
   max-width: 80%;
   height: auto;
@@ -308,11 +308,11 @@ h2 {
 #investorsButton {
   height: 50px;
   width: 200px;
-  
+
   background-color: rgba(204, 0, 0, .3);
   border: 2px solid rgb(204, 0, 0);
   border-radius: 10px;
-  
+
   font-size: 20px;
 }
 
@@ -401,6 +401,70 @@ tr:nth-child(even){
   align: center;
 }
 
+h2{
+  text-align: center;
+  font-family: sans-serif;
+}
+.favRecipe img{
+  height: 300px;
+  width: 400px;
+}
+.favRecipe{
+  position: relative;
+  top: 80px;
+  float: left;
+  width: 30%;
+  margin-left: 45px;
+
+}
+.favRecipe p{
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+.recipeHeader{
+  position: relative;
+  top: 80px;
+}
+.click {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: gray;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+.enlarge {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  height: 700px;
+  width: 850px;
+}
+.exit{
+  float: right;
+  margin-right: 20px;
+  margin-top: : 5px;
+  font-size: 30px;
+}
+.exit :hover{
+  color: crimson;
+}
+
 
 
 
@@ -412,23 +476,14 @@ tr:nth-child(even){
 
 /* #textBox-1 {
   background-color: #EEEEEE;
-  
+
   position: absolute;
   top: 50px;
   left: 100px;
   height: 200px;
   width: 500px;
-  
+
   padding: 30px;
   padding-top: 0px;
   box-shadow: 5px 5px 20px 10px rgb(204, 0, 0);
 } */
-
-
-
-
-
-
-
-
-

@@ -31,10 +31,3 @@ function fadeOut(){
 	//document.getElementsByClassName("mySlides")[slideIndex].className = "mySlides fade-out";
 	setTimeout(function(){showSlides(1);}, 500);
 }
-
-
-
-
-
-
-

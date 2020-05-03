@@ -24,12 +24,3 @@ function showSlides(n) {
 	//timer for automatic change
 	setTimeout(function(){showSlides(1);}, 10000);
 }
-
-
-
-
-
-
-
-
-

@@ -14,8 +14,8 @@
 		<!-- css sheet -->
 		<link rel="stylesheet" href="./style.css" type="text/css">
 	</head>
-  
-  
+
+
 	<body>
 <!-- headings -->
 		<div class="heading">
@@ -34,10 +34,10 @@
 				<i class="fas fa-bars" id="bars"></i>
 			</div>
 		</div>
-		
+
 <!-- content -->
 		<div class="content">
-		
+
 			<div class="slideshow-container">
 				<!-- slides -->
 				<div class="mySlides fade-in">
@@ -56,20 +56,55 @@
 				<a class="prev" onclick="showSlides(-1)">&#10094;</a>
 				<a class="next" onclick="showSlides(1)">&#10095;</a>
 			</div>
-			
-			
-			
-			
-			
-			
-		</div>
-	
-	
-	
-	
-	
+
+    </div>
+    <div class = "recipeHeader">
+    <h2> Today's Top Recipes! </h2>
+  </div>
+    <div class="favRecipe">
+    <img src="pie.jpeg" alt="logo" onclick="zoomIn(pie.jpeg)">
+    <p >Lemon Meringue Pie </p>
+  </div>
+  <div class="favRecipe">
+  <img src="calamari.jpeg" alt="logo" onclick="zoomIn(calamari.jpeg)">
+  <p >Calamari </p>
+  </div>
+  <div class="favRecipe">
+  <img src="roast.jpg" alt="logo" onclick="zoomIn(roast.jpg)">
+  <p >Texas Pot Roast </p>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class = "enlarge">
+      <span class="exit"><i class="fas fa-window-close"></i></span>
+
+      <img id="start" src="pie.jpeg">
+
+    </div>
+  </div>
+
+
+
+
+
+
 		<!-- javascript stuff -->
-		<script src="./carousel.js"></script>
+		<script src="./carousel.js">
+
+    var modal = document.getElementById("myModal");
+    function zoomIn(pictures){
+
+    	document.getElementById("start").src= pictures;
+    	modal.style.display = 'block';
+
+    }
+    //exit the picture
+    var exit = document.getElementsByClassName("exit")[0];
+    exit.onclick = function exit() {
+    modal.style.display = "none";
+    }
+    </script>
+
 	</body>
-  
+
 </html>
