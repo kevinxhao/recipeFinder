@@ -37,7 +37,8 @@
 
 <!-- content -->
 		<div class="content">
-
+		
+	<!-- changing image carousel -->
 			<div class="slideshow-container">
 				<!-- slides -->
 				<div class="mySlides fade-in">
@@ -56,23 +57,72 @@
 				<a class="prev" onclick="showSlides(-1)">&#10094;</a>
 				<a class="next" onclick="showSlides(1)">&#10095;</a>
 			</div>
+			
+	<!-- search bar		 -->
+			
+			<!-- header -->
+			<div class = "recipeHeader">
+				<h2> Find Recipes Now! </h2>
+			</div>
+			
+			<div class="searchFilters">	
+				<!-- catagory menu -->
+				<div class="dropdown">
+					<button onclick="dropMenu()" class="dropbtn">View Catagories...</button>
+					<div id="catagoriesDropdown" class="dropdown-content">
+						<p>Home</p>
+						<p>Home</p>
+						<p>Home</p>
+						<p>Home</p>
+					</div>
+				</div>
+				<!-- search by name -->
+				<div class="searchBar">
+					<input id="searchBar" type="text" placeholder="search recipes...">
+					<i class="fas fa-search" id="search-icon"></i>
+				</div>
+				<!-- random button -->
+				<button class="dropbtn"> Or Get a RANDOM Recipe! </button>
+				
+			</div>
+			
+			
+	<!-- todays top recipes -->
+			<!-- header -->
+			<div class = "recipeHeader">
+				<h2> Today's Top Recipes! </h2>
+			</div>
+			<!-- recipes -->
+			<div class="topRecipes">
+				<div class="favRecipe">
+					<img src="pie.jpeg" alt="logo" onclick="zoomIn(pie.jpeg)">
+					<p >Lemon Meringue Pie </p>
+				</div>
+				<div class="favRecipe">
+					<img src="calamari.jpeg" alt="logo" onclick="zoomIn(calamari.jpeg)">
+					<p >Calamari </p>
+				</div>
+				<div class="favRecipe">
+					<img src="roast.jpg" alt="logo" onclick="zoomIn(roast.jpg)">
+					<p >Texas Pot Roast </p>
+				</div>
+			</div>
 
-    </div>
-    <div class = "recipeHeader">
-    <h2> Today's Top Recipes! </h2>
-  </div>
-    <div class="favRecipe">
-    <img src="pie.jpeg" alt="logo" onclick="zoomIn(pie.jpeg)">
-    <p >Lemon Meringue Pie </p>
-  </div>
-  <div class="favRecipe">
-  <img src="calamari.jpeg" alt="logo" onclick="zoomIn(calamari.jpeg)">
-  <p >Calamari </p>
-  </div>
-  <div class="favRecipe">
-  <img src="roast.jpg" alt="logo" onclick="zoomIn(roast.jpg)">
-  <p >Texas Pot Roast </p>
-  </div>
+
+		</div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div id="myModal" class="modal">
     <div class = "enlarge">
@@ -104,7 +154,8 @@
     modal.style.display = "none";
     }
     </script>
-
+	<script src="./DropDown.js"></script>
+	<script src="./javascript.js"></script>
 	</body>
 
 </html>

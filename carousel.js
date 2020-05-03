@@ -1,5 +1,5 @@
 //image carousel
-console.log("carosel js");
+console.log("carosel js loaded");
 
 //set image index and show slide
 var slideIndex = 1;
@@ -28,6 +28,5 @@ function showSlides(n) {
 
 function fadeOut(){
 	document.getElementsByClassName("mySlides")[slideIndex-1].className = "mySlides fade-out";
-	//document.getElementsByClassName("mySlides")[slideIndex].className = "mySlides fade-out";
-	setTimeout(function(){showSlides(1);}, 500);
+	setTimeout(function(){showSlides(1);}, 750);
 }

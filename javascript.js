@@ -1,26 +1,15 @@
 //image carousel
-console.log("carosel js");
+console.log("javascript js loaded");
 
-//set image index and show slide
-var slideIndex = 1;
-showSlides(0);
+//new request
+var xhttp = new XMLHttpRequest();
 
-//changes the slide
-function showSlides(n) {
-	//hide all slides
-	var slides = document.getElementsByClassName("mySlides");
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	//adjust index
-	slideIndex+=n;
-	if(slideIndex > 3)
-		slideIndex = 1
-	if(slideIndex < 1)
-		slideIndex = 3;
-	//show new slide
-	slides[slideIndex-1].style.display = "block";
-	console.log("slides shown");
-	//timer for automatic change
-	setTimeout(function(){showSlides(1);}, 10000);
-}
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        console.log(JSON.parse(this.responseText));
+    }
+};
+
+xhttp.open("GET", "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken", true);
+xhttp.send();
+
