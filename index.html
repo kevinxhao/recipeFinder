@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<!-- title of page -->
+		<title>Recipe Planner</title>
+
+		<!-- icons -->
+		<script src="https://kit.fontawesome.com/47341a454f.js" crossorigin="anonymous"></script>
+
+		<!-- meta data for google -->
+		<meta name="description" content="A tool to help plan meals">
+
+		<!-- css sheet -->
+		<link rel="stylesheet" href="./style.css" type="text/css">
+	</head>
+  
+  
+	<body>
+<!-- headings -->
+		<div class="heading">
+			<!-- logo -->
+			<div class="logo">
+				<i id="logo" class="fas fa-utensils"></i>
+				<h1 id="title"> Recipe Planner </h1>
+			</div>
+			<!-- search bar -->
+			<div class="searchBar">
+				<input id="searchBar" type="text" placeholder="search recipes...">
+				<i class="fas fa-search" id="search-icon"></i>
+			</div>
+			<!-- buttons -->
+			<div class="head-buttons">
+				<i class="fas fa-bars" id="bars"></i>
+			</div>
+		</div>
+		
+<!-- content -->
+		<div class="content">
+		
+			<div class="slideshow-container">
+				<!-- slides -->
+				<div class="mySlides fade-in">
+					<img src="img1.jpg" class="slideImg">
+					<div class="textbox"><p class="text">Welcome to Recipe Planner</p></div>
+				</div>
+				<div class="mySlides fade-in fade-out">
+					<img src="img2-copy.jpg" class="slideImg">
+					<div class="textbox"><p class="text">Easily create lists of ingredients</p></div>
+				</div>
+				<div class="mySlides fade-in fade-out">
+					<img src="img3.jpg" class="slideImg">
+					<div class="textbox"><p class="text">Cook amazing meals for the whole family</p></div>
+				</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="showSlides(-1)">&#10094;</a>
+				<a class="next" onclick="showSlides(1)">&#10095;</a>
+			</div>
+			
+			
+			
+			
+			
+			
+		</div>
+	
+	
+	
+	
+	
+		<!-- javascript stuff -->
+		<script src="./carousel.js"></script>
+	</body>
+  
+</html>
