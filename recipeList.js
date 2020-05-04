@@ -228,8 +228,12 @@ function getIngredientsList(recipe){
 
 //add eventlisteneres for fav recipes
 document.getElementById("favRecipe1").addEventListener("click", function(){openPopUp(52839);});
+document.getElementById("favRecipe2").addEventListener("click", function(){openPopUp(52850);});
+document.getElementById("favRecipe3").addEventListener("click", function(){openPopUp(52838);});
 //opens the popup window
 function openPopUp(id){
+	
+	console.log("open popup");
 	
 	//new request
 	var popupRequest = new XMLHttpRequest();

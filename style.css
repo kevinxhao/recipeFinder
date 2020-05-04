@@ -376,7 +376,6 @@ h2{
   position: relative;
   float: left;
   width: 25%;
-  z-index: -2;
   text-align: center;
 }
 
@@ -384,14 +383,12 @@ h2{
   position: relative;
   height: auto;
   width: 80%;
-  z-index: -2;
 }
 
 .favRecipe p{
   font-size: 20px;
   font-family: sans-serif;
   text-align: center;
-  z-index: -2;
 }
 
 .medBtn {
@@ -499,57 +496,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.click {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  padding-top: 100px;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: gray;
-}
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1; /* Sit on top */
-  padding-top: 20px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.4);
-}
-.enlarge {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  height: 700px;
-  width: 850px;
-}
-.exit{
-  float: right;
-  margin-right: 20px;
-  margin-top: : 5px;
-  font-size: 30px;
-}
-.exit :hover{
-  color: crimson;
-}
 
 
 
