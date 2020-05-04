@@ -394,188 +394,123 @@ h2{
   z-index: -2;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.panel-2 {
+.medBtn {
   position: relative;
-  display: flex;
-  justify-content:space-between;
-  top: 75px;
-  z-index: -2;
-}
-
-.panel-2* {
-  z-index: -2;
-}
-
-.panel-columns-2 {
-  width: 50%;
-  text-align: center;
-  border: 2px solid black;
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-h2 {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 30px;
-}
-
-#careerPic {
-  max-width:80%;
-  height: auto;
-}
-
-.panel-columns-2 p {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-#careerButton {
-  height: 50px;
-  width: 200px;
-
-  background-color: rgba(204, 0, 0, .3);
-  border: 2px solid rgb(204, 0, 0);
-  border-radius: 10px;
-
-  font-size: 20px;
-}
-
-#investorsPic {
-  max-width: 80%;
-  height: auto;
-}
-
-#investorsText {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-#investorsButton {
-  height: 50px;
-  width: 200px;
-
-  background-color: rgba(204, 0, 0, .3);
-  border: 2px solid rgb(204, 0, 0);
-  border-radius: 10px;
-
-  font-size: 20px;
-}
-
-.panel-3 {
-  position: relative;
-  display: flex;
-  justify-content:space-around;
-  top: 75px;
-  z-index: -2;
-}
-
-.panel-3* {
-  z-index: -2;
-}
-
-.panel-columns-3 {
-  width: 34%;
-  text-align: center;
-  border: 2px solid black;
-  overflow: hidden;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-.panel-columns-3 p {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#storesNearYou {
-  margin-left:auto;
-  margin-right: auto;
-  width: 80%;
-}
-
-th, td, table {
-  border: 1px solid rgb(204, 0, 0);
-}
-
-tr:nth-child(odd){
-  background-color: white;
-}
-
-tr:nth-child(even){
-  background-color: #d1d1d1;
-}
-
-#contactUs {
-  background-color: rgba(204, 0, 0, .3);
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 20px;
-}
-
-#contactUs input {
-  margin-bottom: 10px;
-}
-
-#followUs {
-  margin-left:auto;
-  margin-right: auto;
-  width: 130px;
-  background-color: rgba(204, 0, 0, .3);
-  text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
-.footer {
-  position: relative;
-  top: 75px;
-  height: auto;
-  background-color: rgb(204, 0, 0);
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  border-top: 2px solid black;
-}
-
-#footerText {
+  height: 40px;
+  width: 120px;
+  background-color: green;
   color: white;
+  border: none;
+  margin-bottom: 50px;
 }
 
-#footerLogo {
-  align: center;
+
+/* ----------------------------------pop up content ----------------------------- */
+
+.pop-up {
+	visibility: visible;
+	display: none;
+	position: fixed;
+	background-color: rgba(0, 0, 0, .8);
+	width: 100%;
+	height: 100%;
 }
+
+.pop-up-display {
+	width: 60%;
+	height: 600px;;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: white;
+}
+
+.pop-up-heading {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.pop-up-title {
+	width: 80%;
+	height: 50px;
+}
+
+#lrgTitle {
+	font-size: 40px;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.pop-up-btn {
+	width: 70px;
+	height: 50px;
+	float: right;
+}
+
+#closeBtn {
+	position: relative;
+	width: 60px;
+	height: 40px;
+	top: 5px;
+	left: 5px;
+	background-color: red;
+	color: white;
+	border: none;
+	font-size: 16px;
+}
+
+.pop-up-content {
+	width: 100%;
+	height: 550px;
+	display: flex;
+	overflow: auto;
+}
+
+.pop-up-image {
+	float: left;
+	width: 40%;
+}
+
+#imageLg {
+	width: 90%;
+	position: relative;
+	top: 5%;
+	left: 5%;
+}
+
+.pop-up-text {
+	float: left;
+	width: 60%;
+	height: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .click {
   display: none;

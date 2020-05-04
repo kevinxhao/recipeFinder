@@ -17,6 +17,36 @@
 
 
 	<body>
+<!-- pop up display -->
+	<div class="pop-up" id="pop-up">
+		<div class="pop-up-display">
+			<div class="pop-up-heading">
+				<div class="pop-up-title">
+					<!-- meal name -->
+					<p id="lrgTitle"> Chille Prawn Linguini </p>
+				</div>
+				<div class="pop-up-btn">
+					<!-- close button -->
+					<button id="closeBtn" onclick="closePopUp()"> Close </button>
+				</div>
+			</div>
+			<div class="pop-up-content">
+				<!-- display image -->
+				<div class="pop-up-image">
+					<img id="imageLg" src="https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg">
+				</div>
+				<!-- display text -->
+				<div class="pop-up-text">
+					<p id="lrgIngredients"> Ingredients </p>
+					<p id="lrgInstructions"> Instructions </p>
+				</div>
+			</div>
+		</div>
+	</div>  
+	
+	
+	
+	
 <!-- headings -->
 		<div class="heading">
 			<!-- logo -->
@@ -120,15 +150,15 @@
 			<!-- recipes -->
 			<div class="topRecipes">
 				<div class="favRecipe">
-					<img src="https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg" alt="Chilli Prawn Linguini" onclick="zoomIn(pie.jpeg)">
-					<p > Chilli Prawn Linguini </p>
+					<img src="https://www.themealdb.com/images/media/meals/usywpp1511189717.jpg" alt="Chilli Prawn Linguini" id="favRecipe1"/>
+					<p> Chilli Prawn Linguini </p>
 				</div>
 				<div class="favRecipe">
-					<img src="https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" alt="Chicken Couscous" onclick="zoomIn(calamari.jpeg)">
+					<img src="https://www.themealdb.com/images/media/meals/qxytrx1511304021.jpg" alt="Chicken Couscous" id="faveRecipe2">
 					<p >Chicken Couscous</p>
 				</div>
 				<div class="favRecipe">
-					<img src="https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg" alt="Venetian Duck Ragu" onclick="zoomIn(roast.jpg)">
+					<img src="https://www.themealdb.com/images/media/meals/qvrwpt1511181864.jpg" alt="Venetian Duck Ragu" id="favRecipe3">
 					<p > Venetian Duck Ragu </p>
 				</div>
 			</div>
@@ -164,24 +194,11 @@
 
 
 		<!-- javascript stuff -->
-		<script src="./carousel.js">
-
-    var modal = document.getElementById("myModal");
-    function zoomIn(pictures){
-
-    	document.getElementById("start").src= pictures;
-    	modal.style.display = 'block';
-
-    }
-    //exit the picture
-    var exit = document.getElementsByClassName("exit")[0];
-    exit.onclick = function exit() {
-    modal.style.display = "none";
-    }
-    </script>
-	<script src="./DropDown.js"></script>
-	<script src="./javascript.js"></script>
-	<script src="./recipeList.js"></script>
+		<script src="./carousel.js">    </script>
+		<script src="./DropDown.js"></script>
+		<script src="./javascript.js"></script>
+		<script src="./recipeList.js"></script>
+		<script src="./popup.js"></script>
 	</body>
 
 </html>

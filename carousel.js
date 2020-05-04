@@ -4,9 +4,12 @@ console.log("carosel js loaded");
 //set image index and show slide
 var slideIndex = 1;
 showSlides(0);
+var timer;
 
 //changes the slide
 function showSlides(n) {
+	//cancel old timer
+	clearTimeout(timer);
 	//hide all slides
 	var slides = document.getElementsByClassName("mySlides");
 	for (var i = 0; i < slides.length; i++) {
@@ -23,7 +26,7 @@ function showSlides(n) {
 	slides[slideIndex-1].style.display = "block";
 	console.log("slides shown");
 	//timer for automatic change
-	setTimeout(function(){fadeOut();}, 10000);
+	timer = setTimeout(function(){fadeOut();}, 10000);
 }
 
 function fadeOut(){
